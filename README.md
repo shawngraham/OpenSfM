@@ -1,3 +1,12 @@
+sg note - build for docker: `docker build -t mapillary/opensfm .`
+
+`docker run -ti mapillary/opensfm /bin/sh -c "bin/opensfm_run_all data/berlin"`
+
+of course, now have to copy stuff out or tie it to local in the first place.
+
+---
+
+
 [![Build Status](https://travis-ci.org/mapillary/OpenSfM.svg?branch=master)](https://travis-ci.org/mapillary/OpenSfM)
 OpenSfM
 =======
