@@ -1,8 +1,24 @@
 sg note - build for docker: `docker build -t mapillary/opensfm .`
 
+woops - below not quite right. need to run the thing, but also have the ports sorted out
+
 `docker run -ti mapillary/opensfm /bin/sh -c "bin/opensfm_run_all data/berlin"`
+...will run it, but maybe
+
+`docker run -d -p 8000:80 -ti mapillary/opensfm /bin/bash`
+... and then run it.
+
+inside, at root: `python -m SimpleHTTPServer`
+
+then in browser:
+`http://localhost:8000/viewer/reconstruction.html#file=/data/berlin/reconstruction.meshed.json`
+
 
 of course, now have to copy stuff out or tie it to local in the first place.
+
+
+
+
 
 ---
 
